@@ -64,7 +64,7 @@
 #define IMUL14(x, y) ((((int64_t)x) * ((int64_t)y)) >> 14)
 
 static uint16_t *zLUT;
-uint16_t *frameBuffer;
+extern uint16_t *frameBuffer;
 
 extern int dzdx;
 

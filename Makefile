@@ -330,7 +330,8 @@ else ifeq ($(platform), qnx)
 # emscripten
 else ifeq ($(platform), emscripten)
    TARGET := $(TARGET_NAME)_libretro_$(platform).bc
-   GLES := 1
+   GLES = 0
+   HAVE_OPENGL = 0
    WITH_DYNAREC :=
 
    HAVE_PARALLEL = 0
